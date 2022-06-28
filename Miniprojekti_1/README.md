@@ -1,3 +1,5 @@
+## Miniprojekti 1
+
 ### Tekijä ja päivämäärä:
 Jaakko Pyrhönen 28.6.2022
 
@@ -8,10 +10,21 @@ Henkilökohtainen projekti kurssille käyttöjärjestelmät ja systeemiohjelmoin
 Ohjelma lukee syötettä joko tiedostosta tai suoraan käyttäjän näppäiltynä rivi kerrallaan ja tulostaa lopuksi syötteen toisinpäin käyttäjän tarkentamaan paikkaan.
 
 ### Ohjelman käyttö:
-Projekti kääntyy hakemistossa olevalla Makefile:lla. Kääntäjänä on käytetty GNU compiler:ia. 
-Ohjelman voi ajaa yhdellä kolmesta tavasta:
+Projekti kääntyy hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`. Kääntäjänä on käytetty GNU compiler:ia. 
+Kun ohjelma on käännetty, sen voi ajaa yhdellä kolmesta tavasta:
 
+Lue syöte näppäimistöltä ja kirjoita stdout-virtaan:
+```
 ./reverse
+```
+tai :
+Lue syöte tiedostosta "inputfile" ja kirjoita tulos stdout-virtaan
+```
 ./reverse inputfile
+```
+tai :
+Lue syöte tiedostosta "inputfile" ja kirjoita tulos tiedostoon "outputfile". Jos "outputfile" on jo olemassa, se poistetaan.
+```
 ./reverse inputfile outputfile
+```
 
