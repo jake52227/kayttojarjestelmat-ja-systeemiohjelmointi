@@ -1,7 +1,7 @@
 #ifndef REVERSE_H
 #define REVERSE_H
 
-#define file_open_err(filename) do {fprintf(stderr, "error: cannot open file '%s'\n", filename); exit(1);} while(0);
+#define file_open_err(filename) do {fprintf(stderr, "reverse: cannot open file '%s'\n", filename); exit(1);} while(0);
 #define file_close_err(filename) do {fprintf(stderr, "error trying to close '%s' stream\n", filename); exit(1); } while(0);
 
 struct line {

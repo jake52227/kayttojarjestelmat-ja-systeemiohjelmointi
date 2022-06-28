@@ -17,7 +17,7 @@ void assign_fds(FILE **in, FILE **out, int argc, char *argv[])
     if (argc == 3) {
 
         if (!strcmp(argv[1], argv[2])) {
-            fprintf(stderr, "Input and output file must differ\n");
+            fprintf(stderr, "reverse: input and output file must differ\n");
             exit(1);
         }
 
@@ -103,7 +103,7 @@ void write_list(struct line *head, FILE *out)
 {
     struct line *ptr = head;
     if (ptr == NULL) {
-        fprintf(stderr, "error at write_list: nothing to write\n");
+        fprintf(stderr, "reverse: input and output file must differ\n");
         exit(1);
     }
 
