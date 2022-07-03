@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "my-zip-list.h": "c",
+        "common.h": "c"
+    }
+}
