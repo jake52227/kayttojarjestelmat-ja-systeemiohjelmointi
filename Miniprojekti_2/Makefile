@@ -17,5 +17,5 @@ my-grep: my-grep.c $(COMMON)
 my-unzip: my-unzip.c $(COMMON)
 	$(CC) -o my-unzip my-unzip.c $(FLAGS)
 
-my-zip: my-zip.c my-zip.h $(COMMON)
+my-zip: my-zip.c $(COMMON)
 	$(CC) -o my-zip my-zip.c $(FLAGS)

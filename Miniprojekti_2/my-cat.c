@@ -19,15 +19,9 @@ int main(int argc, char *argv[])
     FILE *in = NULL;
 
     for (int i = 1; i < argc; i++) {
-        if ( (in = fopen(argv[i], "r") ) == NULL)
-            file_open_err("my-cat");
-        
+        open_file(&in, "r", "my-cat", argv[i]);
         write_out(in);
-        
-        if (fclose(in) != 0)
-            file_close_err("my-cat");
-        
-        in = NULL;
+        close_file(&in, "my-cat");
     }
 
     return 0;

@@ -4,31 +4,33 @@
 
 #include "common.h"
 
+// jokainen kirjaus koostuu 4 tavun luvusta ja yhdestä 8 bitin ASCII-kirjaimesta
+struct item
+{
+    int32_t consecutive;
+    int8_t character;
+};
+
 // lukee parametrina annetut RLE-zipatut tiedostot ja unzippaa ne tulostaen tuloksen
 void unzip(int argc, char *argv[])
 {
     FILE *in = NULL;
-    uint32_t integer;
-    char character;
+    struct item item = {0, 0};
     
     for (int i = 1; i < argc; i++) {
-        if ( (in = fopen(argv[i], "r")) == NULL )
-            file_open_err("my-unzip");
+        open_file(&in, "r", "my-unzip", argv[i]);
         
         while (feof(in) == 0) {
-            fread(&integer, sizeof(uint32_t), 1, in);   // 4 tavun kokonaisluku
-            fread(&character, sizeof(char), 1, in);     // 1 tavun merkki
-      
-            // jos ei ilmennyt eof tai virheitä, kirjoitetaan luetun kokonaisluvun verran kirjaimia
+            fread(&item, 5, 1, in);
+
+            // jos ei ilmennyt eof tai virheitä, tulostetaan luetun kokonaisluvun verran kirjaimia
             if ( (feof(in) == 0) && (ferror(in) == 0)) {
-                for (int j = 0; j < integer; j++) {
-                    printf("%c", character);
+                for (int j = 0; j < item.consecutive; j++) {
+                    printf("%c", item.character);
                 }
             }
         }
-        if (fclose(in) != 0)
-            file_close_err("my-unzip");
-        in = NULL;
+        close_file(&in, "my-unzip");
     }
 }
 

@@ -6,13 +6,14 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul  3 13:30:19 2022
+# Make data base, printed on Mon Jul  4 08:08:06 2022
 
 # Variables
 
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -51,7 +52,7 @@ SNAP_DATA = /var/snap/code/99
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:64691
+JOURNAL_STREAM = 8:66821
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,7 +80,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/99/usr/share/code/code
 # environment
-MANAGERPID = 2006
+MANAGERPID = 2010
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +96,7 @@ NO_PROXY = 127.0.0.1
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/jaakko:@/tmp/.ICE-unix/2225,unix/jaakko:/tmp/.ICE-unix/2225
+SESSION_MANAGER = local/jaakko:@/tmp/.ICE-unix/2234,unix/jaakko:/tmp/.ICE-unix/2234
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -113,7 +114,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = bd9db0db0609426c9854adbbd1c4d99a
+INVOCATION_ID = fdb16817669146c2bf84401676acd3be
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -125,7 +126,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 16472
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4529
 # automatic
 %F = $(notdir $%)
 # environment
@@ -139,7 +140,7 @@ PWD = /home/jaakko/yliopisto_ja_omatprojektit/yliopistojuttuja/kayttojarjestelma
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2192
+SSH_AGENT_PID = 2200
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -195,7 +196,7 @@ CC = gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-23802f41-ffdb-4b4c-a2a3-ec5967f76bb1.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ff5c31a7-da3f-4559-a0e2-f04648a6b89a.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -283,9 +284,8 @@ COMMON = common.h
 # environment
 LANG = C
 # environment
-VSCODE_PID = 16523
+VSCODE_PID = 4603
 # variable set hash-table stats:
- 
 # Load=137/1024=13%, Rehash=0, Collisions=34/172=20%
 
 # Pattern-specific Variable Values
@@ -294,9 +294,9 @@ VSCODE_PID = 16523
 
 # Directories
 
-# . (device 2065, inode 51250203): 26 files, no impossibilities.
+# . (device 2065, inode 51250203): 29 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 29 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -312,10 +312,12 @@ my-cat.c:
 #  Successfully updated.
 
 # Not a target:
+ 
 my-zip.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-03 22:10:49.296733929
+#  File has been updated.
+#  Successfully updated.
 
 all: my-cat my-grep my-zip my-unzip
 #  Command line target.
@@ -334,12 +336,6 @@ my-unzip: my-unzip.c common.h
 	$(CC) -o my-unzip my-unzip.c $(FLAGS)
 
 # Not a target:
-my-zip.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -348,14 +344,15 @@ my-zip.h:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-02 21:32:33.260914924
+#  Last modified 2022-07-03 21:28:19.094012715
 #  File has been updated.
 #  Successfully updated.
 
 my-grep: my-grep.c common.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-07-03 21:59:48.967495301
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 15):
 	$(CC) -o my-grep my-grep.c $(FLAGS)
 
@@ -374,40 +371,22 @@ my-unzip.c:
 # Not a target:
 common.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-01 14:04:31.926710755
+#  Last modified 2022-07-03 21:59:15.887184304
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 my-grep.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-03 15:16:06.21686246
+#  File has been updated.
+#  Successfully updated.
 
 my-cat: my-cat.c common.h
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  Last modified 2022-07-02 20:55:03.384024297
+#  Last modified 2022-07-03 21:59:48.935495103
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := my-cat
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := my-cat.c common.h
-# automatic
-# | := 
-# automatic
-# < := my-cat.c
-# automatic
-# ^ := my-cat.c common.h
-# automatic
-# ? := my-cat.c
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 12):
 	$(CC) -o my-cat my-cat.c $(FLAGS)
 
@@ -418,27 +397,47 @@ clean:
 #  recipe to execute (from 'Makefile', line 9):
 	rm -f $(ALL)
 
-my-zip: my-zip.c my-zip.h common.h
+my-zip: my-zip.c common.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-07-03 22:10:18.148450922
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := my-zip
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := my-zip.c common.h
+# automatic
+# | := 
+# automatic
+# < := my-zip.c
+# automatic
+# ^ := my-zip.c common.h
+# automatic
+# ? := my-zip.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
 #  recipe to execute (from 'Makefile', line 21):
 	$(CC) -o my-zip my-zip.c $(FLAGS)
 
 # files hash-table stats:
-# Load=15/1024=1%, Rehash=0, Collisions=0/44=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/42=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 32 / storage = 243 B / avg = 7 B
-# current buf: size = 8162 B / used = 243 B / count = 32 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 35 / storage = 275 B / avg = 7 B
+# current buf: size = 8162 B / used = 275 B / count = 35 / avg = 7 B
 
-# strcache performance: lookups = 61 / hit rate = 47%
+# strcache performance: lookups = 63 / hit rate = 44%
 # hash-table stats:
-# Load=32/8192=0%, Rehash=0, Collisions=9/61=15%
-# Finished Make data base on Sun Jul  3 13:30:19 2022
+# Load=35/8192=0%, Rehash=0, Collisions=10/63=16%
+# Finished Make data base on Mon Jul  4 08:08:06 2022
 
  
