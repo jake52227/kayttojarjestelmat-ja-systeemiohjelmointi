@@ -48,3 +48,15 @@ tai
 wish> path dirpath1 dirpath2 ...
 ```
 Oletuksena path-muuttujaan on asetettu `/bin`
+
+### Uudelleenohjaus ja samanaikaiset komennot
+Wishin ajamien komentojen tulokset voidaan ohjata tiedostoon oheisella tavalla:
+```
+wish> command > file
+```
+komentoja voi suorittaa myös samanaikaisesti. Esimerkiksi:
+```
+wish> sleep 5 & sleep 5 & sleep 5
+```
+, joka odottaisi yhteensä noin 5 sekuntia.
+
