@@ -7,13 +7,13 @@ Jaakko Pyrhönen 4.7.2022
 Henkilökohtainen projekti kurssille käyttöjärjestelmät ja systeemiohjelmointi. Projektissa on luotu erilaisia utiliteettifunktioita kuten 
 Unix:n cat-funktion kopio my-cat.
 
-### Kääntäminen:
-Projektin ohjelmat kääntyy hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`. Kääntäjänä on käytetty GNU compiler:ia. 
-
 ### Projektissa käytetyt työkalut
 - Käyttöjärjestelmä: Ubuntu 20.04.04
 - Kieli: C, ei noudata standardia
 - kääntäjä: gcc 9.4.0
+
+### Kääntäminen:
+Projektin ohjelmat kääntyvät hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`.
 
 ### my-cat
 My-cat lukee tiedostosta rivin kerrallaan ja tulostaa ne näytölle. My-cat:lle voi antaa useamman tiedoston, jolloin ne tulostetaan järjestyksessä.
