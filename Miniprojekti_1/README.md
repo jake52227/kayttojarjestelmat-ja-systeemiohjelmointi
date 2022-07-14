@@ -9,8 +9,16 @@ Henkilökohtainen projekti kurssille käyttöjärjestelmät ja systeemiohjelmoin
 ### Mitä ohjelma tekee
 Ohjelma lukee syötettä joko tiedostosta tai suoraan käyttäjän näppäiltynä rivi kerrallaan ja tulostaa lopuksi syötteen toisinpäin käyttäjän tarkentamaan paikkaan.
 
+### Projektissa käytetyt työkalut
+- Käyttöjärjestelmä: Ubuntu 20.04.04
+- Kieli: C, ei noudata standardia
+- kääntäjä: gcc 9.4.0
+
+### Kääntäminen
+Projekti kääntyy hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`.
+
 ### Ohjelman käyttö:
-Projekti kääntyy hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`. Kääntäjänä on käytetty GNU compiler:ia. 
+
 Kun ohjelma on käännetty, sen voi ajaa yhdellä kolmesta tavasta:
 
 Lue syöte näppäimistöltä ja kirjoita stdout-virtaan:
