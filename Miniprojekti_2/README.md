@@ -25,6 +25,11 @@ My-grep käy läpi sille argumenttina annetut tiedostot ja tulostaa jokaisen riv
 ```bash
 ./my-grep pattern file1 file2 ...
 ```
+my-grep voidaan kutsua myös pelkällä patternilla, jolloin syöte luetaan virrasta stdin:
+```bash
+./my-grep pattern
+```
+
 ### my-zip
 My-zip käy läpi sille argumenttina annetut tiedostot ja kirjoittaa niistä run-length encoding:ia käyttäen yhden pötkön virtaan stdout.
 ```bash
