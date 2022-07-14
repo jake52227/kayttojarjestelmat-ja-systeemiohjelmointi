@@ -39,7 +39,7 @@ wish> cd directory
 ```
 wish> exit
 ```
-ja `path` tarkentaa hakemistopolun, josta wish etsii suoritettavia ohjelmia. Path ottaa yhden tai useamman argumentin:
+`path` tarkentaa hakemistopolun, josta wish etsii suoritettavia ohjelmia. Path ottaa yhden tai useamman argumentin:
 ```
 wish> path
 ```
