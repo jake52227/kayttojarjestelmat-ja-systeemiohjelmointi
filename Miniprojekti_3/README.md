@@ -6,13 +6,13 @@ Jaakko Pyrhönen 14.7.2022
 ### Projektin tarkoitus
 Henkilökohtainen projekti kurssille käyttöjärjestelmät ja systeemiohjelmointi. Projektissa on luotu Unix shell nimeltään wish.
 
-### Kääntäminen:
-Projektin ohjelmat kääntyvät hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`. Kääntäjänä on käytetty GNU compiler:ia. 
-
 ### Projektissa käytetyt työkalut
 - Käyttöjärjestelmä: Ubuntu 20.04.04
 - Kieli: C, ei noudata standardia
 - kääntäjä: gcc 9.4.0
+
+### Kääntäminen:
+Projektin ohjelmat kääntyvät hakemistossa olevalla Makefile:lla: `cd` hakemistoon ja kirjoita `make`.
 
 ### Käyttö
 wish voidaan kutsua kahdella tavalla:
