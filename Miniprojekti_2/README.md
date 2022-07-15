@@ -9,7 +9,7 @@ Unix:n cat-funktion kopio my-cat.
 
 ### Projektissa käytetyt työkalut
 - Käyttöjärjestelmä: Ubuntu 20.04.04
-- Kieli: C, ei noudata standardia
+- Kieli: C,  ei noudata mitään tiettyä standardia
 - kääntäjä: gcc 9.4.0
 
 ### Kääntäminen:
