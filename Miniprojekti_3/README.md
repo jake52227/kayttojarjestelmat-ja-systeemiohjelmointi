@@ -81,6 +81,6 @@ struct command {
 komentoja ajoon heti perään muissa prosesseissa.
 
 - Kaikki riviltä löydetyt komennon tallennetaan listaan yllä näkyvän mukaisia rakenteita.
-- Komennot suoritetaan luomalla jokaiselle oma lapsiprosessi `fork`-systeemikutsulla. Lapsiprosessi kutsuu `execv`-systeemikutsua.
+- Ei-sisäänrakennetut Komennot suoritetaan luomalla jokaiselle oma lapsiprosessi `fork`-systeemikutsulla. Lapsiprosessi kutsuu `execv`-systeemikutsua.
 
 
